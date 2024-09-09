@@ -5,7 +5,7 @@ metadata:
   labels:
     app: fwavedemo
     kubernetes.azure.com/generator: devhub
-  namespace: namespace-workflow-1725749935487
+  namespace: namespace-workflow-1725857693654
 spec:
   replicas: 1
   selector:
@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: fwavedemo
-          image: acrworkflow1725749935487.azurecr.io/image-workflow-1725749935487:latest
+          image: acrworkflow1725857693654.azurecr.io/image-workflow-1725857693654:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 5000
