@@ -1,14 +1,14 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: fwavedemo
-  namespace: namespace-workflow-1725857693654
+  name: fwave-demo-preppr
+  namespace: namespace-workflow-1725896379495
   labels:
     kubernetes.azure.com/generator: devhub
 spec:
   type: LoadBalancer
   selector:
-    app: fwavedemo
+    app: fwave-demo-preppr
   ports:
     - protocol: TCP
       port: 5000
