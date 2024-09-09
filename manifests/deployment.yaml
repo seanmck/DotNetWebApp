@@ -1,24 +1,24 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: fwavedemo
+  name: fwave-demo-preppr
   labels:
-    app: fwavedemo
+    app: fwave-demo-preppr
     kubernetes.azure.com/generator: devhub
-  namespace: namespace-workflow-1725857693654
+  namespace: namespace-workflow-1725896379495
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: fwavedemo
+      app: fwave-demo-preppr
   template:
     metadata:
       labels:
-        app: fwavedemo
+        app: fwave-demo-preppr
     spec:
       containers:
-        - name: fwavedemo
-          image: acrworkflow1725857693654.azurecr.io/image-workflow-1725857693654:latest
+        - name: fwave-demo-preppr
+          image: acrworkflow1725896379495.azurecr.io/image-workflow-1725896379495:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 5000
